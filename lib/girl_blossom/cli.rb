@@ -7,6 +7,7 @@ class GirlBlossom::CLI
         puts "To see the recommended product for normal skin, enter 'normal skin'."
         puts "To see the recommended product for oily skin, enter 'oily skin'."
         puts "To see the recommended product for combination skin, enter 'combination skin'."
+        puts "If you're done learning about your product, enter 'exit'."
 
         user_input = ""
         until user_input == "exit"
@@ -21,6 +22,8 @@ class GirlBlossom::CLI
                 self.oily_product
             when "combo" || "combination" || "combination skin"
                 self.combination_product
+            when "exit"
+                puts "Have the best day!"
             end
         end
     end
