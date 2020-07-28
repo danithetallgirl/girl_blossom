@@ -37,5 +37,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", ">= 12.3.3"
+  #Updated the Rake spec, as the version at initial installation was 10.0.0 and over years it's now had major revisions, minor, and bug fixes. Rake is now at version 12.3.3
 end
