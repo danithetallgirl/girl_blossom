@@ -26,7 +26,9 @@ class GirlBlossom::CLI
     end
 
     def dry_product
-        GirlBlossom::Dry
+        GirlBlossom::Dry.all do |product|
+            puts "#{product.name}" 
+        end
     end
 end
 
