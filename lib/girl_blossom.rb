@@ -4,6 +4,7 @@ require_relative "./girl_blossom/dry"
 require_relative "./girl_blossom/dry_scraper"
 require 'pry'
 require 'nokogiri'
+require 'open-uri'
 
 
 module GirlBlossom

@@ -1,6 +1,6 @@
 class GirlBlossom::Dry
     @@all = []
-    attr_accessor :name, :description, :price
+    attr_accessor :name
 
     def initialize(name)
         @name = name
@@ -8,9 +8,11 @@ class GirlBlossom::Dry
     end
 
     def self.all
+        GirlBlossom::DryScraper.scrape_dry if @@all.empty?
         @@all
     end
 
     def save
         @@all << self
     end
+end

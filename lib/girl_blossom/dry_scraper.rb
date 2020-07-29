@@ -1,15 +1,11 @@
-require 'net/http'
-require 'open-uri'
-require 'json'
-require 'pry'
-require 'nokogiri'
-
-require_relative './dry.rb'
-
 class GirlBlossom::DryScraper
-    
-    def scrape_dry
-        doc = Nokogiri::HTML(open("shorturl.at/ixBDQ"))
-        # CURRENT URL: requests info for moisturizer name, description, and price.
+    def self.scrape_dry
+        doc = Nokogiri::HTML(open("https://www.sephora.com/product/creme-de-la-mer-moisturizing-cream-P416341?icid2=skininthegame_dry_moisturize_other_us_carsousel_ufe:p416341:product"))
+
+        doc = Nokogiri::HTML(open(site))
+        puts doc.css(".css-euydo4").text
+        puts doc.css(".css-0").text
+        puts doc.css(".css-slwsq8").text
+        puts doc.css(".css-pz80c5").text
     end
 end
