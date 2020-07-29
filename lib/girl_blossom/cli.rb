@@ -18,7 +18,7 @@ class GirlBlossom::CLI
             when "oily" || "oily skin"
                 self.oily_product
             when "combo" || "combination" || "combination skin"
-                self.combination_product
+                self.combo_product
             when "exit"
                 puts "Have the best day!"
             end
@@ -27,6 +27,24 @@ class GirlBlossom::CLI
 
     def dry_product
         GirlBlossom::Dry.all do |product|
+            puts "#{product.name}" 
+        end
+    end
+
+    def normal_product
+        GirlBlossom::Normal.all do |product|
+            puts "#{product.name}" 
+        end
+    end
+
+    def oily_product
+        GirlBlossom::Oily.all do |product|
+            puts "#{product.name}" 
+        end
+    end
+
+    def combo_product
+        GirlBlossom::Combo.all do |product|
             puts "#{product.name}" 
         end
     end

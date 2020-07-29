@@ -1,7 +1,8 @@
 require_relative "./girl_blossom/version"
 require_relative "./girl_blossom/cli"
 require_relative "./girl_blossom/dry"
-require_relative "./girl_blossom/dry_scraper"
+require_relative "./girl_blossom/normal"
+require_relative "./girl_blossom/scraper"
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
