@@ -29,8 +29,9 @@ class GirlBlossom::CLI
     end
 
     def dry_product
-        puts "Bliss"
-        binding.pry
+        #GirlBlossom::Dry do |product|
+         #   puts product.name
+        end
     end
 end
 
