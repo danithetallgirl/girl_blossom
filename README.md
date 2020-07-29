@@ -1,29 +1,29 @@
-# GirlBlossom
+# Girl Blossom
 
-Hi there! Welcome to Girl Blossom! 
+Hi there! Welcome to Girl Blossom! Girl Blossom is a command line interface that allows the user to receive a suggested moisturizer based on the input of their skin type.
 
-Girl Blossom is an app that helps you find the right face moisturizer for your skin type. 
-Whether your skin is dry, normal, oily, or combination, this app will suggest the product for you.
+The gem will then kindly greet the user and shares a short description of how the app functions. When the user selects their skin type, the gem will then return the suggested product for that skin type. The product will include the product brand, product name, price, and product description. Until user types in exit, the gem will continue to ask, "What's your skin type?". When the user types in exit, they are then dismissed with kind goodbye message.
 
 ## Installation
+    
+To run this application in your local environment, follow these steps:
 
-Add this line to your application's Gemfile:
+1. Clone this repository
+2. Run cd girl_blossom
+3. Run bundle install
+4. Run ./bin/girl_blossom
 
-```ruby
-gem 'girl_blossom'
+## Sample
 ```
+Hi there! Welcome to Girl Blossom!
 
-And then execute:
+Girl Blossom is an app that helps you find the right face moisturizer for your skin type. Whether your skin is dry, normal, oily, or combination, our app will find the product for you.
 
-    $ bundle
+Enter your skin type to see the moisturizer we recommend for you.
 
-Or install it yourself as:
-
-    $ gem install girl_blossom
-
-## Usage
-
-To start the gem, type in ```./bin/girl_blossom```. The gem will then kindly greet the user and shares a short description of how the app functions. When the user selects their skin type, the gem will then return the suggested product for that skin type. The product will include the product brand, product name, price, and product description. Until user types in exit, the gem will continue to ask, "What's your skin type?". When the user types in exit, they are then dismissed with kind goodbye message.
+What's your skin type?
+I accept: dry, normal, oily, combo, and exit.
+```
 
 ## Development
 
@@ -34,6 +34,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/'danithetallgirl'/girl_blossom. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Authors
+
+Dani Bassett - Girl Blossom was created by Dani Bassett on July 29, 2020 - [Dani Bassett](https://github.com/danithetallgirl)
 
 ## License
 
