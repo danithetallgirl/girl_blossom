@@ -1,15 +1,5 @@
-require 'pry'
-
-class Dry
-    attr_reader :name, :details, :price
+class GirlBlossom::Dry
     @@all = []
-
-    def initialize(name=nil, details=nil, price=nil)
-        @name = name
-        @details = details
-        @price = price
-        @@all << self
-    end
 
     def self.all
         @@all

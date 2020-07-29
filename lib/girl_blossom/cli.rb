@@ -3,10 +3,7 @@ class GirlBlossom::CLI
     def call
         puts "\nHi there! Welcome to Girl Blossom!\n"
         puts "\nGirl Blossom is an app that helps you find the right face moisturizer for your skin type. Whether your skin is dry, normal, oily, or combination, our app will find the product for you.\n"
-        puts "\nTo see the recommended product for dry skin, enter 'dry skin'.\n"
-        puts "To see the recommended product for normal skin, enter 'normal skin'."
-        puts "To see the recommended product for oily skin, enter 'oily skin'."
-        puts "To see the recommended product for combination skin, enter 'combination skin'."
+        puts "\nEnter your skin type to see the moisturizer we recommend for you.\n"
         puts "If you're done learning about your product, enter 'exit'."
 
         user_input = ""
@@ -31,7 +28,6 @@ class GirlBlossom::CLI
     def dry_product
         #GirlBlossom::Dry do |product|
          #   puts product.name
-        end
     end
 end
 
