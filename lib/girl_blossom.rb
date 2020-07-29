@@ -3,6 +3,8 @@ require_relative "./girl_blossom/cli"
 require_relative "./girl_blossom/dry"
 require_relative "./girl_blossom/normal"
 require_relative "./girl_blossom/scraper"
+require_relative "./girl_blossom/oily"
+require_relative "./girl_blossom/combo"
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
