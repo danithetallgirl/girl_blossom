@@ -9,9 +9,9 @@ The gem will then kindly greet the user and shares a short description of how th
 To run this application in your local environment, follow these steps:
 
 1. Clone this repository
-2. Run cd girl_blossom
-3. Run bundle install
-4. Run ./bin/girl_blossom
+2. Run ```cd girl_blossom```
+3. Run ```bundle install```
+4. Run ```./bin/girl_blossom```
 
 ## Sample
 ```
