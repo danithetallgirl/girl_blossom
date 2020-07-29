@@ -1,4 +1,5 @@
 class GirlBlossom::Scraper
+    #Each method is scraping from a URL that is puts-ing out the brand name, product name, price, and description all by scraping their assigned url/site.
     def self.scrape_dry
         doc = Nokogiri::HTML(open("https://www.sephora.com/product/creme-de-la-mer-moisturizing-cream-P416341?icid2=skininthegame_dry_moisturize_other_us_carsousel_ufe:p416341:product"))
 
