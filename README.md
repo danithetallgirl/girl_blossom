@@ -17,7 +17,8 @@ To run this application in your local environment, follow these steps:
 ```
 Hi there! Welcome to Girl Blossom!
 
-Girl Blossom is an app that helps you find the right face moisturizer for your skin type. Whether your skin is dry, normal, oily, or combination, our app will find the product for you.
+Girl Blossom is an app that helps you find the right face moisturizer for your skin type. 
+Whether your skin is dry, normal, oily, or combination, our app will find the product for you.
 
 Enter your skin type to see the moisturizer we recommend for you.
 
