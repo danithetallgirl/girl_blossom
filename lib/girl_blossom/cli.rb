@@ -2,7 +2,8 @@ class GirlBlossom::CLI
     #Defining the call method with strings that the user will see when logging onto the app. Until user types exit, call will continue to ask, "What's your skin type?" until the user types in their skin type.
     def call
         puts "\nHi there! Welcome to Girl Blossom!\n"
-        puts "\nGirl Blossom is an app that helps you find the right face moisturizer for your skin type. Whether your skin is dry, normal, oily, or combination, our app will find the product for you.\n"
+        puts "\nGirl Blossom is an app that helps you find the right face moisturizer for your skin type.\n"
+        puts "Whether your skin is dry, normal, oily, or combination, our app will find the product for you."
         puts "\nEnter your skin type to see the moisturizer we recommend for you.\n"
 
         user_input = ""
