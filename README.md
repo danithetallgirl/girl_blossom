@@ -2,10 +2,6 @@
 
 Hi there! Welcome to Girl Blossom! Girl Blossom is an app that helps you find the right face moisturizer for your skin type. Whether your skin is dry, normal, oily, or combination, our app will find the product for you.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/girl_blossom`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To start the gem, type in ```./bin/girl_blossom```. The gem will then kindly greet the user and shares a short description of how the app functions. When the user selects their skin type, the gem will then return the suggested product for that skin type. The product will include the product brand, product name, price, and product description. Until user types in exit, the gem will continue to ask, "What's your skin type?". When the user types in exit, they are then dismissed with kind goodbye message.
 
 ## Development
 
