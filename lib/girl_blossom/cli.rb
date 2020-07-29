@@ -4,23 +4,22 @@ class GirlBlossom::CLI
         puts "\nHi there! Welcome to Girl Blossom!\n"
         puts "\nGirl Blossom is an app that helps you find the right face moisturizer for your skin type. Whether your skin is dry, normal, oily, or combination, our app will find the product for you.\n"
         puts "\nEnter your skin type to see the moisturizer we recommend for you.\n"
-        puts "For example, you can enter:  dry, normal, oily or combo."
-        puts "If you're done learning about your product, enter 'exit'."
 
         user_input = ""
         until user_input == "exit"
             puts "\nWhat's your skin type?\n"
+            puts "I accept: dry, normal, oily, combo, and exit."
             user_input = gets.chomp
             case user_input
-            when "dry" || "dry skin"
+            when "dry"
                 self.dry_product
-            when "normal" || "normal skin"
+            when "normal"
                 self.normal_product
-            when "oily" || "oily skin"
+            when "oily"
                 self.oily_product
-            when "combo" || "combination"
+            when "combo"
                 self.combo_product
-            when "exit" || "EXIT" || "Exit"
+            when "exit"
                 puts "Have the best day!"
             end
         end
