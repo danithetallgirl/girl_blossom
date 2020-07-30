@@ -5,14 +5,14 @@ class GirlBlossom::CLI
         puts "\nGirl Blossom is an app that helps you find the right face moisturizer for your skin type.\n"
         puts "Whether your skin is dry, normal, oily, or combination, our app will find the product for you."
         puts "\nEnter your skin type to see the moisturizer we recommend for you.\n"
-
+    #Until the user enters a skin type or exit, it'll continue to ask the user "What's your skin type?"
         user_input = ""
         until user_input == "exit"
             puts "\nWhat's your skin type?\n"
             puts "I accept: dry, normal, oily, combo, and exit."
             user_input = gets.chomp
             case user_input
-            when "dry"
+            when "dry" #when user types in dry, it will puts out the method dry_product
                 self.dry_product
             when "normal"
                 self.normal_product
@@ -28,25 +28,21 @@ class GirlBlossom::CLI
 #dry, normal, oily, and combo will pull product information from their assigned classes. Each skin type class then puts the suggested product along with brand name, product name, price, and a full product description.
     def dry_product
         GirlBlossom::Dry.all do |product|
-            puts "#{product}" 
         end
     end
 
     def normal_product
         GirlBlossom::Normal.all do |product|
-            puts "#{product}" 
         end
     end
 
     def oily_product
         GirlBlossom::Oily.all do |product|
-            puts "#{product}" 
         end
     end
 
     def combo_product
         GirlBlossom::Combo.all do |product|
-            puts "#{product}" 
         end
     end
 end

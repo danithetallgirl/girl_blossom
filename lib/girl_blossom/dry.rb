@@ -8,8 +8,7 @@ class GirlBlossom::Dry
     end
 
     def self.all
-        GirlBlossom::Scraper.scrape_dry if @@all.empty?
-        @@all
+        GirlBlossom::Scraper.scrape_dry
     end
 
     def save
