@@ -1,18 +1,11 @@
-class GirlBlossom::Combo
-    @@all = []
-    attr_accessor :name
-
-    def initialize(name)
-        @name = name
-        save
-    end
+require_relative "./dry.rb"
+#Each skin type class is now inheriting from the dry class.
+class GirlBlossom::Combo < GirlBlossom::Dry
 
     def self.all
         GirlBlossom::Scraper.scrape_combo if @@all.empty?
         @@all
     end
 
-    def save
-        @@all << self
-    end
+
 end
