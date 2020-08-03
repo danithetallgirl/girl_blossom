@@ -8,7 +8,7 @@ require_relative "./girl_blossom/combo"
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
-
+require 'colorize'
 
 module GirlBlossom
   class Error < StandardError; end

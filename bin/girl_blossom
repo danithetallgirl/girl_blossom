@@ -3,3 +3,5 @@
 require_relative '../lib/girl_blossom'
 
 GirlBlossom::CLI.new.call
+#Calling a new instance of GirlBlossom. New is an class method that instantiates. Call is an instance method.
+
